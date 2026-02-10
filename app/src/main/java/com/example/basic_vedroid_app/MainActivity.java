@@ -25,6 +25,7 @@ import android.widget.Switch;
 
 import android.widget.ImageView;
 import android.widget.Switch;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.app.AppCompatDelegate;
@@ -46,6 +47,11 @@ public class MainActivity extends AppCompatActivity {
         SharedPreferences prefs = getSharedPreferences("settings", MODE_PRIVATE);
         boolean nightMode = prefs.getBoolean("night_mode", false);
 
+
+
+
+
+
         if (nightMode) {
             AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
         } else {
@@ -56,8 +62,29 @@ public class MainActivity extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
 
+
+        int id = item.getItemId();
+        if (id == R.id.show_text){
+            if (item.isChecked()){
+                TextView lab9TextView = findViewById(R.id.lab9TextView);
+                lab9TextView.setVisibility(TextView.VISIBLE);
+                item.setChecked(false);
+            }
+            else {
+                TextView lab9TextView = findViewById(R.id.lab9TextView);
+                lab9TextView.setVisibility(TextView.INVISIBLE);
+                item.setChecked(true);
+            }
+        }
+
+
+
+
+        Button buttonlab5 = findViewById(R.id.lab5_btn);
         imageViewTheme = findViewById(R.id.imageViewTheme);
         switchTheme = findViewById(R.id.switchTheme);
+
+        Button buttonlab6 = findViewById(R.id.lab6_btn);
 
         int currentNightMode = getResources().getConfiguration().uiMode &
                 android.content.res.Configuration.UI_MODE_NIGHT_MASK;
@@ -84,5 +111,25 @@ public class MainActivity extends AppCompatActivity {
             imageViewTheme.setImageResource(isChecked ?
                     R.drawable.confusion_darktheme : R.drawable.confusion_daytheme);
         });
+
+        buttonlab5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, lab5Act1.class);
+                startActivity(intent);
+            }
+        });
+
+        buttonlab6.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, lab6Act1.class);
+                startActivity(intent);
+            }
+        });
+
+
+
+
     }
 }

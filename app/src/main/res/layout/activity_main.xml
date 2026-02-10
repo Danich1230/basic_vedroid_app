@@ -33,5 +33,37 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <LinearLayout
+        android:layout_width="89dp"
+        android:layout_height="245dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="140dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/lab5_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:text="Лаба 5" />
+
+        <Button
+            android:id="@+id/lab6_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Лаба 6" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/lab9TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="80dp"
+        android:text="Lab9TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
