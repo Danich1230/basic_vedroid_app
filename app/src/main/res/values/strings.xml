@@ -1,4 +1,9 @@
 <resources>
     <string name="app_name">basic_vedroid_app</string>
     <string name="title_activity_lab7_map">lab7Map</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="configure">Configure</string>
+    <string name="add_widget">Add widget</string>
+    <string name="app_widget_description">This is an app widget description</string>
+    <string name="msg_token_fmt">FCM token: %s</string>
 </resources>

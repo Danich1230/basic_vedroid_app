@@ -34,8 +34,8 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <LinearLayout
-        android:layout_width="89dp"
-        android:layout_height="245dp"
+        android:layout_width="93dp"
+        android:layout_height="505dp"
         android:layout_marginStart="40dp"
         android:layout_marginTop="140dp"
         android:orientation="vertical"
@@ -44,15 +44,58 @@
 
         <Button
             android:id="@+id/lab5_btn"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="48dp"
             android:text="Лаба 5" />
 
         <Button
             android:id="@+id/lab6_btn"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Лаба 6" />
+
+        <Button
+            android:id="@+id/lab7_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Лаба 7" />
+
+        <Button
+            android:id="@+id/lab11_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Лаба 11" />
+
+        <Button
+            android:id="@+id/lab12_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Лаба 12" />
+
+        <Button
+            android:id="@+id/lab13_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Лаба 13" />
+
+        <Button
+            android:id="@+id/lab14_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Лаба 14" />
+
+        <Button
+            android:id="@+id/lab15_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Лаба 15" />
+
+        <Button
+            android:id="@+id/lab16_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Лаба 16" />
+
     </LinearLayout>
 
     <TextView
